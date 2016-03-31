@@ -1,0 +1,22 @@
+{
+  {
+                "facilities": [{
+                                "id": 1,
+                                "name": "Multiple Computers"
+                }, {
+                                "id": 2,
+                                "name": "Network Point"
+                },{
+                                "id": 3,
+                                "name": "Projector"
+                },
+				{
+                                "id": 4,
+                                "name": "Video Conferensing"
+                },
+				{
+                                "id": 5,
+                                "name": "White Board"
+                }]
+}
+

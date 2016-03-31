@@ -1,0 +1,22 @@
+{
+  {
+                "locations": [{
+                                "id": 1,
+                                "name": "All"
+                }, {
+                                "id": 2,
+                                "name": "Cybage Towers"
+                },{
+                                "id": 3,
+                                "name": "Gandhinagar"
+                },
+				{
+                                "id": 4,
+                                "name": "Hydarabad"
+                },
+				{
+                                "id": 5,
+                                "name": "West Avenue"
+                }]
+}
+

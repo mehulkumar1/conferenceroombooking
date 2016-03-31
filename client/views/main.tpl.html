@@ -1,0 +1,324 @@
+
+
+
+<div class="row">
+<h1>conference rooms booking</h1>
+
+</div>
+
+
+
+
+
+
+<div class="rowone">
+
+<h3>Room Search</h3>
+
+</div>
+
+<hr align="left" max-width="100%">
+
+
+
+<label>Location:*</label>
+
+<div class="rowsecond" >
+
+
+
+
+  <div class="col-sm-2">
+      <input type="checkbox" ng-model="selectedAll" ng-click="checkAll()" />
+<label>All
+
+        </label>
+</div>
+
+    <div ng-repeat="location in locationchecklist" >
+
+
+<div class="col-sm-2">
+
+        <label>
+
+                <input type="checkbox" ng-model="location.isChecked" >
+
+                <span>{{location.name}}</span>
+
+
+
+              </div>
+            </label>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<hr align="left" max-width="100%">
+
+</br>
+
+
+
+
+
+
+
+<div class="rowthird">
+
+<label>Facilities:*</label>
+
+        <div ng-repeat="facility in facilitychecklist">
+
+
+          <div class="col-sm-2">
+            <label>
+                    <input type="checkbox" ng-model="facility.isChecked" />
+
+                    <span>{{facility.name}}</span>
+
+</div>
+
+                </label>
+        </div>
+    </div>
+
+
+
+    <br>
+
+    <hr align="left" max-width="100%">
+
+    </br>
+
+
+
+    <div class="rowfourths">
+
+
+        <div class="col-sm-3">
+
+
+
+            <label>Capacity:*</label>
+
+</div>
+
+
+
+
+
+
+
+<div class="col-sm-3">
+
+
+
+    <label>Purpose:*</label>
+
+
+</div>
+
+
+
+
+<div class="col-sm-6">
+
+
+
+  <label>Priority Facilities:*</label>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="rowfourth">
+
+
+    <div class="col-sm-3">
+
+
+
+
+
+
+  <input type="number" class="input-small" required>
+
+</div>
+
+    <div class="col-sm-3">
+
+
+
+    <select ng-model="myPurpose" ng-options="purpose.name for purpose in Purpose" >
+    </select>
+</div>
+    </div>
+
+
+
+  <div class="col-sm-3">
+
+
+
+    <select ng-model="myPriorityFacilities" ng-options="priorityFacilities.name for priorityFacilities in PriorityFacilities">
+
+  </select>
+
+
+
+
+
+    <select>
+    <option >(select facility-1)</option>
+    <option >(select facility-2)</option>
+
+
+  </select></div>
+
+</div>
+
+    <hr align="left" width="100%">
+
+
+
+
+
+
+        <div class="rowfives">
+
+
+
+          <div class="col-sm-4">
+            <label>Date:*</label>
+          </div>
+
+
+
+
+
+
+
+                    <div class="col-sm-4">
+                      <label>Time:*</label>
+                    </div>
+
+
+
+
+
+                              <div class="col-sm-4">
+                                <label>Duration:*</label>
+                              </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="rowfive">
+
+
+<div class="col-sm-4">
+
+<input type="date">
+</div>
+
+<div class="col-sm-4">
+
+<input type="time">
+
+</div>
+
+
+
+
+<div class="col-sm-4">
+
+
+
+
+<input type="number" name="hour" min="0" max="24">
+
+
+
+<label>Hour(s)</label>
+
+
+
+<input type="number" name="hour" min="0" max="60">
+
+
+
+
+
+
+
+<label>Min(s)</label>
+
+</div>
+
+    <hr align="left" width="100%">
+
+
+<div class ="rowsix">
+
+<div class="col-sm-12">
+
+  <label>  subject For New Meeting:* </label>
+
+
+
+
+
+
+  <input type="text">
+
+
+
+
+
+
+   <input type="Submit" value="Search" checked>
+
+
+
+
+
+    <input type="Submit" value="Cancel" checked>
+
+
+
+
+
+
+
+
+     <input type="Submit" value="Show Occupancy" checked>
+
+   </div>
+
+    <hr align="left" width="100%">
